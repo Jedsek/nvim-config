@@ -1,0 +1,6 @@
+require "options"
+require "nvim-packer"
+require "keymaps"
+require "themes"
+require "lsp"
+require "plugin-config"
