@@ -9,7 +9,6 @@ local plugins = {
     "lualine",
     "nvim-treesitter",
     "symbols-outline",
-    "term",
     "tree",
     "which-key",
 }

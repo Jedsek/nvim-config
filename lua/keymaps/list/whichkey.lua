@@ -11,6 +11,8 @@ local whichkeys = {
     ["<leader>="] = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Lsp-Format" },
     ["<leader>a"] = { "<cmd>Lspsaga code_action<cr>", "Code-Action" },
     ["<leader>r"] = { "<cmd>Lspsaga rename<cr>", "Rename"},
+    ["gk"] = { "<cmd>Lspsaga hover_doc<cr>", "Doc"},
+
     ["<leader>h"] = {
         name = "+Hop",
         l = { "<cmd>HopLine<cr>", "Line" },

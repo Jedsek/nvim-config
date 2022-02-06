@@ -78,8 +78,6 @@ return packer.startup(function(use)
     use "rafamadriz/friendly-snippets"
     -- lspkind
     use "onsails/lspkind-nvim"
-        
-        
     use { "tami5/lspsaga.nvim", branch = "nvim6.0" }
     use "folke/which-key.nvim"
     use {
@@ -92,7 +90,7 @@ return packer.startup(function(use)
         "nvim-telescope/telescope.nvim",
         requires = { {"nvim-lua/plenary.nvim"} }
     }
-    use "numToStr/FTerm.nvim"
+    -- use "numToStr/FTerm.nvim"
     use "lukas-reineke/indent-blankline.nvim"
     use "windwp/nvim-autopairs"
     use "simrat39/symbols-outline.nvim"
