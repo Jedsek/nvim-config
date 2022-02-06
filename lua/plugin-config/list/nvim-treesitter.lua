@@ -3,7 +3,7 @@ for _, config in pairs(require("nvim-treesitter.parsers").get_parser_configs()) 
 end
 
 require"nvim-treesitter.configs".setup {
-    ensure_installed = { "c","css","html","json","lua","rust","toml","typescript","vala","vim" },
+    ensure_installed = { "bash", "c","css","html","json","lua","rust","toml","typescript","vala","vim" },
     highlight = {
         enable = true,
         additional_vim_regex_highlighting = false

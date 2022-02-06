@@ -10,7 +10,12 @@ local whichkeys = {
     ["<leader>q"] = { "q", "Macro"},
     ["<leader>="] = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Lsp-Format" },
     ["<leader>a"] = { "<cmd>Lspsaga code_action<cr>", "Code-Action" },
-    ["<leader>r"] = { "<cmd>Lspsaga rename<cr>", "Rename"}
+    ["<leader>r"] = { "<cmd>Lspsaga rename<cr>", "Rename"},
+    ["<leader>h"] = {
+        name = "+Hop",
+        l = { "<cmd>HopLine<cr>", "Line" },
+        w = { "<cmd>HopWord<cr>", "Word" },
+    }
 }
 
 return whichkeys
