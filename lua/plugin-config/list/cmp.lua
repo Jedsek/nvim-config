@@ -4,17 +4,19 @@ local cmp = require"cmp"
 cmp.setup {
     snippet = {
         expand = function(args)
-            vim.fn["vsnip#anonymous"](args.body)
+            require('luasnip').lsp_expand(args.body)
         end,
     },
+
+    mapping = require"keymaps".cmp(cmp),
+
     sources = cmp.config.sources({
     { name = "nvim_lsp" },
-    { name = "vsnip" },
+    { name = "luasnip" },
     }, { { name = "buffer" },
         { name = "path" }
         }),
 
-    mapping = require"keymaps".cmp(cmp),
     formatting = {
         format = lspkind.cmp_format({
             with_text = true,
@@ -40,3 +42,9 @@ cmp.setup.cmdline(":", {
         { name = "cmdline" }
         })
 })
+
+
+
+
+
+require("luasnip.loaders.from_vscode").load()

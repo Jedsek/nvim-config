@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/jedsek/.local/share/nvim/site/pack/packer/start/FTerm.nvim",
     url = "https://github.com.cnpmjs.org/numToStr/FTerm.nvim"
   },
+  LuaSnip = {
+    loaded = true,
+    path = "/home/jedsek/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com.cnpmjs.org/L3MON4D3/LuaSnip"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/jedsek/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -103,11 +108,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jedsek/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com.cnpmjs.org/hrsh7th/cmp-path"
-  },
-  ["cmp-vsnip"] = {
-    loaded = true,
-    path = "/home/jedsek/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
-    url = "https://github.com.cnpmjs.org/hrsh7th/cmp-vsnip"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -198,11 +198,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jedsek/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com.cnpmjs.org/nvim-telescope/telescope.nvim"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/home/jedsek/.local/share/nvim/site/pack/packer/start/vim-vsnip",
-    url = "https://github.com.cnpmjs.org/hrsh7th/vim-vsnip"
   },
   ["which-key.nvim"] = {
     loaded = true,

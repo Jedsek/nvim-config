@@ -19,7 +19,7 @@ end
 vim.cmd [[
 augroup packer_user_config
 autocmd!
-autocmd BufWritePost plugins.lua source <afile> | PackerSync
+autocmd BufWritePost nvim-packer.lua source <afile> | PackerSync
 augroup end
 ]]
 
@@ -68,8 +68,13 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-cmdline"  -- { name = cmdline }
     use "hrsh7th/nvim-cmp"
     -- vsnip
-    use "hrsh7th/cmp-vsnip"    -- { name = vsnip }
-    use "hrsh7th/vim-vsnip"
+    -- use "hrsh7th/cmp-vsnip"    -- { name = vsnip }
+    -- use "hrsh7th/vim-vsnip"
+
+    -- luasnip
+    use "L3MON4D3/LuaSnip"
+    use "saadparwaiz1/cmp_luasnip"
+
     use "rafamadriz/friendly-snippets"
     -- lspkind
     use "onsails/lspkind-nvim"
