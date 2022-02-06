@@ -1,7 +1,6 @@
 local opts = { noremap = true, silent = true }
 local map = vim.api.nvim_set_keymap
 
-map("", "<space>", "<nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -39,3 +38,8 @@ map("v", "p", '"_dP', opts)
 
 map("n", "<c-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<cr>", opts)
 map("n", "<c-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<cr>", opts)
+
+
+
+map("n", "q", "<cmd>q<cr>", opts)
+map("n", "U", "<c-r>", opts)

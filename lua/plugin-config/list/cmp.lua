@@ -8,7 +8,7 @@ cmp.setup {
         end,
     },
 
-    mapping = require"keymaps".cmp(cmp),
+    mapping = require"keymaps.list.cmp" (cmp),
 
     sources = cmp.config.sources({
     { name = "nvim_lsp" },
